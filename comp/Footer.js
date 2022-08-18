@@ -6,13 +6,10 @@ const Footer = () => {
     return (
         <>
         <footer  aria-aria-label='footer' className={styles.Footer}>
-            <Link href='/about' passHref>
-                <a>About</a>
-            </Link>
-            <Link href='/terms-conditions' passHref>
-                <a>terms-conditions</a>
-            </Link>
-             <div >© {new Date().getFullYear()} by Tahjay Thompson, inc </div>
+             <div >© {new Date().getFullYear()} By Rentawhip Ltd</div>
+             <strong>
+             Designed and Created By Dosnine.
+             </strong>
       </footer>
 
       </>

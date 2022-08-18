@@ -7,12 +7,11 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
           <Head>
-          <meta name="google-site-verification" content="Whrv3gCttHLv5OdtXLp9qLZ0rHyY-bEoNw8Kg7M0H00" />          {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=UA-213178747-1`}
+            // src={`https://www.googletagmanager.com/gtag/js?id=UA-213178747-1`}
           />
-          
+{/*           
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -24,7 +23,7 @@ class MyDocument extends Document {
                 });
             `,
             }}
-          />
+          /> */}
                     <link
             rel="prefetch"
             href='/font/OpenSans/OpenSans-ExtraBold.ttf'
@@ -54,11 +53,6 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
             type="font/ttf"
           />
-        <script 
-          async 
-          src= {`https://www.googleoptimize.com/optimize.js?id=${process.env.GOOGLE_OPTIMISE_KEY}`}>
-        </script>
-
         
                     
         </Head>     

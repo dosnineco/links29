@@ -14,15 +14,14 @@ const Meta = ({title,des,url,img,pub,mod}) => {
           <meta property="og:description" content={`${des}`} />
           <meta property="og:determiner" content="the" />
           <meta property="og:locale" content="en" />
-          <meta property="og:site_name" content="tahjaythompson" />
-          <meta property="article:publisher" content="https://www.tahjaythompson.com" />
+          <meta property="og:site_name" content="rentawhip" />
+          <meta property="article:publisher" content="https://www.rentawhip.com" />
           <meta property="datePublished" content={`${pub}`}/>
-          <meta property="author" content="Tahjay Thompson"/>
-          <meta property="article:author" content="tahjaythompson.com"/>
+          <meta property="author" content="rentawhip"/>
+          <meta property="article:author" content="rentawhip.com"/>
           <meta property="article:published_time" content={`${pub}`}/>
           <meta property="article:modified_time" content={`${mod}`}/>
-          <meta property="article:tag" content="best picks"/>
-          <meta property="article:tag" content="best gadgets"/>
+   
 
           <link rel="canonical" href={`${url}`}/>
           <meta property="og:image:height" content="1920"/>
@@ -32,7 +31,7 @@ const Meta = ({title,des,url,img,pub,mod}) => {
           <meta name="twitter:title" content={`${title}`}/>
           <meta name="twitter:description"  content={`${des}`}/>
           <meta name="twitter:image"content={`${img}`}/>
-          <meta name="twitter:site" content="https://www.tahjaythompson.com"/>
+          <meta name="twitter:site" content="https://www.rentawhip.com"/>
           <meta name="keywords" 
               content=""/>
         {/* pinterest */}

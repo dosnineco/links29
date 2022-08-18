@@ -8,7 +8,7 @@ const Header =()=>{
 		<div className={css.header} aria-label="nav bar">
 			<Link href='/' passHref>
                 <a className={css.logo}>   
-                tahjay thompson             
+                rentawhip             
                 </a>
             </Link>
 		</div>
