@@ -10,16 +10,7 @@ const Cta_section = () => {
   return (
     <section className={css.sections_container}>
       <div className={css.cta_container}>
-       
-        <div className={css.text_container}>
-          <h1  className={css.h1}>
-          Ready To Grow? Get Your Free Proposal Today:
-          </h1>
-          <p className={css.p}>
-          Take the next step in growing your business using digital marketing. Connect with one of our expert digital strategists to learn how Dosnine can help you reach your business goals.
-          </p>
-        </div>
-    
+        Cta
       </div>
     </section>
   )
@@ -30,16 +21,7 @@ const Services_section = () => {
     <section className={css.sections_container}>
       <div className={css.services_container}>
         <ol className={css.services_container_ol}>
-          <li>Custom SEO</li>
-          <li>Google Analytics Integration</li>
-          <li>Custom Fonts</li>
-          <li>Unique branding</li>
-          <li>User Accessability</li>
-          <li>Copywriting</li>
-          <li>Startup landing pages</li>
-          <li>Responsive designs</li>
-          <li>Instant page load time</li>
-          <li>Newsletter Integration</li>
+          services
         </ol>
       </div>
     </section>
