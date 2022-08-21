@@ -1,8 +1,11 @@
 :root{
   --bkg:#fff;
+  --primary:#2573fc;
+  --black:#161616;
+  --gray:#5f6b73;
+  --heading:1.5em;
+  --paragragh:1em;
 }
-
-
 
 html,
 body {
@@ -11,12 +14,12 @@ body {
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizespeed;
   font-weight: 400;
-  color: #1c1c1c;
+  color: var(--gray);
   background-color:var(--bkg) ;
   overflow-x: hidden;
   font-feature-settings: "kern";
-  font-size: 23px;
-    line-height: 1.5;
+  font-size: var(--paragragh);
+  line-height: 1.5;
 
 
 
@@ -35,23 +38,21 @@ body {
 
 }
 
-@media   (max-width:480px) {
+/* @media   (max-width:480px) {
   #__next{
     font-size: 1.1em;
   }
-}
+} */
 
 p{
   padding: 1em 0;
   display: block;
-  color: #1c1c1c;
   line-height: 1.5;
 }
 
 img{
   width:100%;
   display: block;
-  /*border-radius: var(--border_rad);*/
 }
 
 li{
@@ -68,15 +69,16 @@ li{
 
 h1,h2,h3{
   margin: 0;
-  color: #1a1a1a;
-  font-size: 50px;
+  color: var(--black);
+  font-size: var(--heading);
   line-height: 1.2;
   font-weight: 900;
+  text-transform: capitalize;
 }
 
 
 a{
-  color:#00248b;
+  color:var(--primary);
 }
 
 
