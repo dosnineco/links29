@@ -3,6 +3,7 @@ import css from '../styles/index.module.css';
 import React from 'react';
 import Link from 'next/link';
 import Meta from 'seo/meta';
+import ContactUs from 'comp/ContactUs';
 
 
 
@@ -70,24 +71,11 @@ const Services_section = () => {
 const Contact_section = () => {
   return (
     <section className={css.sections_container}>
-    
+      <ContactUs/>
     </section>
   )
 }
-const Testimonials_section = () => {
-  return (
-    <section className={css.sections_container}>
-    <ol>
-        <li>
-          <div>
-          <Image src="/1660881763172357_c5_100x100.jpeg" layout='intrinsic' width={100} height={100} placeholder='blur' blurDataURL priority/>
-          </div>
-          <p>" RentAwhip.com saved me a lot of time when it came to finding a great vehicle when i visit Jamaica.</p>
-        </li>
-      </ol>
-    </section>
-  )
-}
+
 
 
 
@@ -106,8 +94,7 @@ export default function Home() {
           <div className={css.home_container}>
           <Cta_section/>
           <Services_section/>
-          {/* <Contact_section/> */}
-          <Testimonials_section/>
+          <Contact_section/>
         </div>
         
       </>

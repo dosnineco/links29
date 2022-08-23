@@ -1,15 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from './styles/footer.module.css';
+import css from './styles/footer.module.css';
 
 const Footer = () => {
     return (
         <>
-        <footer  aria-aria-label='footer' className={styles.Footer}>
-             <div >© {new Date().getFullYear()} By Rentawhip Ltd</div>
-             <strong>
-             Designed and Created By Dosnine.
-             </strong>
+        <footer  aria-aria-label='footer' className={css.footer}>
+            <Link href='/contactus' passHref><a className={css.blue}>	Contact Us Now</a></Link>
+            <ul >
+                <li><Link href='/' passHref><a className={css.regular}>	About</a></Link></li>
+			</ul>
+             <div >© {new Date().getFullYear()} Rentawhip, Ltd</div>
+             <span>
+                Powered By Dosnine™ 
+            </span> 
       </footer>
 
       </>

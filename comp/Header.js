@@ -14,7 +14,7 @@ const Header =()=>{
 				<ul className={css.unorder_menu}>
 					<li><Link href='/' passHref><a className={css.regular}>	Home</a></Link></li>
 					<li><Link href='/' passHref><a className={css.regular}>	About</a></Link></li>
-					<li><Link href='/' passHref><a className={css.blue}>	Contact</a></Link></li>
+					<li><Link href='/contactus' passHref><a className={css.blue}>	Contact</a></Link></li>
 				</ul>
 			</div>
 		</div>
