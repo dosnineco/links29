@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.tahjaythompson.com
+
+# Sitemaps
+Sitemap: https://www.tahjaythompson.com/sitemap.xml
+Sitemap: https://www.tahjaythompson.com/server-sitemap.xml

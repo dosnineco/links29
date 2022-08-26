@@ -126,7 +126,7 @@ header{
   z-index: 30;
   top: 0;
   padding:0 3em ;
-  background-color: red;
+  /* background-color: red; */
 }
 nav{
   display: flex;
