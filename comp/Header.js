@@ -1,23 +1,54 @@
-import React from 'react';
+import React, { useState } from "react";
 import css from './styles/header.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
 
-const Header =()=>{
-	return(
-		<div className={css.header} aria-label="nav bar">
-			<div className={css.container}>
-				<Link href='/' passHref>
+const NavItem = ({ text, href, active }) => {
+	return (
+	  <Link href={href}>
+		<a className={`nav__link`}>{text}</a>
+	  </Link>
+	);
+  };
+  
+
+  const Navbar = () => {
+	const [navActive, setNavActive] = useState(null);
+	const [activeIdx, setActiveIdx] = useState(-1);
+  
+	return (
+	  <header >
+		<nav className={`nav`}>
+		<Link href='/' passHref>
 				<a>	Rentawhip</a>
 				
 				</Link>
-				<ul className={css.unorder_menu}>
-					<li><Link href='/' passHref><a className={css.regular}>	Home</a></Link></li>
-					<li><Link href='/' passHref><a className={css.regular}>	About</a></Link></li>
-					<li><Link href='/contactus' passHref><a className={css.blue}>	Contact</a></Link></li>
-				</ul>
-			</div>
-		</div>
+		  <div
+			onClick={() => setNavActive(!navActive)}
+			className={`nav__menu-bar`}
+		  >
+			<div></div>
+			<div></div>
+			<div></div>
+		  </div>
+		  <div onScrollCapture={() => setNavActive(!navActive)} className={`${navActive ? "active" : ""} nav__menu-list`}>
+			<ul onClick={() => setNavActive(!navActive)}   className={css.unorder_menu}>
+				<li><Link href='/' passHref><a className={css.regular}>	Home</a></Link></li>
+				<li><Link href='/' passHref><a className={css.regular}>	About</a></Link></li>
+				<li><Link href='/contactus' passHref><a className={css.blue}>	Contact</a></Link></li>
+			</ul>
+		  </div>
+		</nav>
+	  </header>
+	);
+  };
+
+
+const Header =()=>{
+	return(
+		<>
+		<Navbar/>
+		</>
 	)
 }
 

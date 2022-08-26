@@ -88,7 +88,12 @@ export default () => {
             : 'Submitting...'}
         </button>
 
-        <h2>Or Call: 8765431111</h2>
+        {/* <h2>Or Call: 876 208-5353</h2> */}
+
+        <span  className={css.phone}>
+        <a href="tel:876-208-5353">876 208-5353</a>
+        </span>
+        {/* rentawhipstandardonwheels@gmail.com */}
 
 
       </form>

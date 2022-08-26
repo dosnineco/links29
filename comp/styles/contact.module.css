@@ -5,7 +5,7 @@
     justify-content: center;
     width: 100%;
     border-top: 2px solid rgb(220, 219, 219);
-    border-radius: 20em;
+    border-radius: 2em;
     /* border-bottom: 2px solid rgb(220, 219, 219); */
     padding: 3em 1em;
 
@@ -85,5 +85,45 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
+
+}
+
+
+.phone{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    border-radius: 4px;
+    margin-top: 1em;
+
+
+    
+}
+
+.phone ::before{
+    content:'Call Us:    '
+}
+
+.phone a{
+    text-decoration: none;
+    color:#fff;
+    width:100%;
+    padding:1em;
+    background-color: var(--gray);
+
+
+}
+
+
+@media screen and (max-width: 600px){
+    .form{
+        width:100%;
+        padding:1em;
+    }
+
+    .main{
+        margin-top:4.5em;
+
+    }
 
 }

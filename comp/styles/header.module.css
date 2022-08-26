@@ -56,3 +56,19 @@
     border: 3px solid var(--gray);
 
 }
+
+@media screen and (max-width: 768px) {
+    .unorder_menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .unorder_menu li{
+        list-style-type: none;
+        margin:0.5em 0;
+    
+    }
+    
+
+}
