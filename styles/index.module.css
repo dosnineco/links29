@@ -11,7 +11,7 @@
 
 .cta_container{
   background-color: var(--gray);
-  background-image: url('/image_processing20201130-521-cjx9ft.png');
+  /* background-image: url('/image_processing20201130-521-cjx9ft.png'); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,6 +79,7 @@ display:flex;
 align-items: center;
 justify-content: space-between;
 flex-direction: column;
+border-radius: 2px solid #000;
 }
 
 .services_container_ol li img{
@@ -98,8 +99,16 @@ flex-direction: column;
 }
 
 
-@media screen and (max-width: 600px){
+.md{
+  width:100%;
+  padding:0 6em;
+}
 
+@media screen and (max-width: 600px){
+  .md{
+    width:100%;
+    padding:0 1em;
+  }
   .services_container{
     padding: 1em;
     text-align: center;
@@ -137,3 +146,4 @@ flex-direction: column;
   
   
 }
+

@@ -15,7 +15,12 @@
 
 
 }
-
+.pages{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
 
 
 .footer{
@@ -41,20 +46,25 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
+    border-top:1px solid gray;
+    border-bottom:1px solid gray;
+
+    margin:1em 0;
 
 }
 
 .footer li{
     list-style-type: none;
-    padding: 1em 0;
+    padding: 1em;
     color:white;
+    font-weight: 600;
 
 }
 
 .footer li a{
     color:white;
-    border-bottom: 1px solid var(--primary);
+    /* border-bottom: 1px solid var(--primary); */
 }
 
 .footer span{

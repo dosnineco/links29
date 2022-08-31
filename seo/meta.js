@@ -15,10 +15,10 @@ const Meta = ({title,des,url,img,pub,mod}) => {
           <meta property="og:determiner" content="the" />
           <meta property="og:locale" content="en" />
           <meta property="og:site_name" content="rentawhip" />
-          <meta property="article:publisher" content="https://www.rentawhip.com" />
+          <meta property="article:publisher" content="https://www.rentawhipja.com" />
           <meta property="datePublished" content={`${pub}`}/>
           <meta property="author" content="rentawhip"/>
-          <meta property="article:author" content="rentawhip.com"/>
+          <meta property="article:author" content="rentawhipja.com"/>
           <meta property="article:published_time" content={`${pub}`}/>
           <meta property="article:modified_time" content={`${mod}`}/>
    
@@ -31,11 +31,10 @@ const Meta = ({title,des,url,img,pub,mod}) => {
           <meta name="twitter:title" content={`${title}`}/>
           <meta name="twitter:description"  content={`${des}`}/>
           <meta name="twitter:image"content={`${img}`}/>
-          <meta name="twitter:site" content="https://www.rentawhip.com"/>
+          <meta name="twitter:site" content="https://www.rentawhipja.com"/>
           <meta name="keywords" 
               content=""/>
         {/* pinterest */}
-        <meta name="p:domain_verify" content="c0417992127fabf5d7bd4f6ca36c8e50"/>
         <link rel="manifest" href="/site.webmanifest"/>
         <link href="/favicon.ico" rel="shortcut icon" />
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"/>

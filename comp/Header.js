@@ -19,10 +19,12 @@ const NavItem = ({ text, href, active }) => {
 	return (
 	  <header >
 		<nav className={`nav`}>
-		<Link href='/' passHref>
-				<a>	Rentawhip</a>
-				
-				</Link>
+			<Link href='/' passHref>
+				<a alt="Rentawhip">
+				Rentawhip
+				{/* <Image src="/logo.jpg" layout='intrinsic' width={660} height={415} placeholder='blur' blurDataURL priority/> */}
+				</a>
+			</Link>
 		  <div
 			onClick={() => setNavActive(!navActive)}
 			className={`nav__menu-bar`}
