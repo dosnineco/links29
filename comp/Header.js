@@ -21,8 +21,8 @@ const NavItem = ({ text, href, active }) => {
 		<nav className={`nav`}>
 			<Link href='/' passHref>
 				<a alt="Rentawhip">
-				Rentawhip
-				{/* <Image src="/logo.jpg" layout='intrinsic' width={660} height={415} placeholder='blur' blurDataURL priority/> */}
+				{/* Rentawhip */}
+				<Image src="/logo.png" layout='intrinsic' width={380} height={90} placeholder='blur' blurDataURL priority/>
 				</a>
 			</Link>
 		  <div
