@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import css from '@/comp/styles/contact.module.css'
-export default () => {
+export default ({title}) => {
   const [status, setStatus] = useState({
     submitted: false,
     submitting: false,
@@ -60,7 +60,7 @@ export default () => {
   };
   return (
     <main className={css.main}>
-            <h2>Rent a Car Today!</h2>
+            <h2>{title?title:'Rent a Car Today!'}</h2>
 
       <form  className={css.form} onSubmit={handleOnSubmit}>
         <label htmlFor="email">Email</label>

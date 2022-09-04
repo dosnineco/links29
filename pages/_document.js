@@ -9,21 +9,20 @@ class MyDocument extends Document {
           <Head>
           <script
             async
-            // src={`https://www.googletagmanager.com/gtag/js?id=UA-213178747-1`}
-          />
-{/*           
+            src={`https://www.googletagmanager.com/gtag/js?id=G-M2GFWEF7NY`}
+          />           
           <script
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'UA-213178747-1', {
+                gtag('config', 'G-M2GFWEF7NY', {
                   page_path: window.location.pathname,
                 });
             `,
             }}
-          /> */}
+          />
                     <link
             rel="prefetch"
             href='/font/OpenSans/OpenSans-ExtraBold.ttf'
@@ -53,7 +52,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
             type="font/ttf"
           />
-        
+<meta name="google-site-verification" content="B8fTeI8B7k6H8GLsUcoph0ZwAjPqCd2YB8l07HQJgec" />        
                     
         </Head>     
         <body>

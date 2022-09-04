@@ -12,7 +12,7 @@ const Cta_section = () => {
     <section className={css.sections_container}>
       <div className={css.cta_container}>
         <h1>Find the most effective cars  to rent.</h1>
-        <p>Find a cheap, reliable car to rent for all your needs.</p>
+        <p>Drive in luxury with us today.</p>
         <Link href='/contactus' passHref><a className={css.blue}>	Contact</a></Link>
       </div>
     </section>
@@ -22,42 +22,46 @@ const Cta_section = () => {
 const Services_section = () => {
   return (
     <section className={css.sections_container}>
+
+ 
+
       <div className={css.services_container}>
-        <h2>Our most popular choices</h2>
-        <p>RentAwhip.com offers  the lowest car rental prices in Jamaica.</p>
+          <h3 className={css.card_card_h3}>Select Your Ride</h3>
         <ol className={css.services_container_ol}>
-          <Link href='/' passHref>
-            <a >
-              <li>
-                <Image src="/SUZUKI-SWIFT.jpg" layout='intrinsic' width={660} height={415} placeholder='blur' blurDataURL priority/>
-                <h3>Fiat Panda Pop 1.2</h3>
-                <span>Transmission: 5-Speed Manual</span>
-                <span>Fuel Type: Petrol</span>
-              </li>
+          <li className={css.card_card}>
+          <Link href='/7seater_subaru' passHref>
+            <a className={css.card_card_parent}>
+                <Image src="/img/img_1.jpeg" layout='intrinsic' objectFit="cover" width={660} height={415} placeholder='blur' blurDataURL priority/>
+                <div className={css.card_card_text}>
+                  <span className={css.card_card_title}>
+                    <span className={css.card_card_title_child}>subaru exiga 7 Seater</span>
+                  </span>
+                  <span className={css.card_card_price}><strong>$8000Jmd/</strong>Day</span>
+                  <button className={css.card_card_cta}>Rent Now</button>
+                </div>
             </a>
           </Link>
-          <Link href='/' passHref>
-            <a >
-              <li>
-                <Image src="/SUZUKI-SWIFT.jpg" layout='intrinsic' width={660} height={415} placeholder='blur' blurDataURL priority/>
-                <h3>Fiat Panda Pop 1.2</h3>
-                <span>Transmission: 5-Speed Manual</span>
-                <span>Fuel Type: Petrol</span>
-              </li>
+          </li>
+
+          <li className={css.card_card}>
+          <Link href='/5seater_subaru' passHref>
+            <a className={css.card_card_parent}>
+                <Image src="/img/img_5.jpeg" layout='intrinsic' objectFit="cover" width={660} height={415} placeholder='blur' blurDataURL priority/>
+                <div className={css.card_card_text}>
+                  <span className={css.card_card_title}>
+                    <span className={css.card_card_title_child}>Subaru impreza g4 5 Seater</span>
+                  </span>
+                  <span className={css.card_card_price}><strong>$7000Jmd/</strong>Day</span>
+                  <button className={css.card_card_cta}>Rent Now</button>
+                </div>
             </a>
           </Link>
-          <Link href='/' passHref>
-            <a >
-              <li>
-                <Image src="/SUZUKI-SWIFT.jpg" layout='intrinsic' width={660} height={415} placeholder='blur' blurDataURL priority/>
-                <h3>Fiat Panda Pop 1.2</h3>
-                <span>Transmission: 5-Speed Manual</span>
-                <span>Fuel Type: Petrol</span>
-              </li>
-            </a>
-          </Link>
+          </li>
         </ol>
+     
       </div>
+
+
     </section>
   )
 }
@@ -87,7 +91,17 @@ export default function Home() {
         /> 
           <div className={css.home_container}>
           <Cta_section/>
+     
           <Services_section/>
+          <div className={css.list_of_s}>
+            <ul className={css.services_listing}>
+              <li className={css.services_listing_1}>  Spacious car rentals within your budget </li>
+              <li className={css.services_listing_2}>Many makes and models to choose from </li>
+              <li className={css.services_listing_3}>Competitive prices</li>
+              <li className={css.services_listing_4}>Low deposit required </li>
+              <li className={css.services_listing_5}>Car delivered to you</li>
+            </ul>
+          </div>
           <Contact_section/>
         </div>
         
