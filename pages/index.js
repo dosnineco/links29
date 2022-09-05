@@ -95,8 +95,8 @@ export default function Home() {
           <Services_section/>
           <div className={css.list_of_s}>
             <ul className={css.services_listing}>
-              <li className={css.services_listing_1}>  Spacious car rentals within your budget </li>
-              <li className={css.services_listing_2}>Many makes and models to choose from </li>
+              <li className={css.services_listing_1}>Spacious car rentals</li>
+              <li className={css.services_listing_2}>Many makes and models</li>
               <li className={css.services_listing_3}>Competitive prices</li>
               <li className={css.services_listing_4}>Low deposit required </li>
               <li className={css.services_listing_5}>Car delivered to you</li>
