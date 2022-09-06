@@ -57,6 +57,20 @@ const Services_section = () => {
             </a>
           </Link>
           </li>
+          <li className={css.card_card}>
+          <Link href='/5seater_subaru_black' passHref>
+            <a className={css.card_card_parent}>
+                <Image src="/img/img_10.jpeg" layout='intrinsic' objectFit="cover" width={660} height={415} placeholder='blur' blurDataURL priority/>
+                <div className={css.card_card_text}>
+                  <span className={css.card_card_title}>
+                    <span className={css.card_card_title_child}>Subaru impreza g4 5 Seater</span>
+                  </span>
+                  <span className={css.card_card_price}><strong>$7000Jmd/</strong>Day</span>
+                  <button className={css.card_card_cta}>Rent Now</button>
+                </div>
+            </a>
+          </Link>
+          </li>
         </ol>
      
       </div>
