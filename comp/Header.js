@@ -19,10 +19,11 @@ const NavItem = ({ text, href, active }) => {
 	return (
 	  <header >
 		<nav className={`nav`}>
-			<Link href='/' passHref>
-				<a alt="Rentawhip">
+			<Link  href='/' passHref>
+				<a className={`logo`} alt="Rentawhip">
 				{/* Rentawhip */}
-				<Image src="/logo.png" layout='intrinsic' width={380} height={90} placeholder='blur' blurDataURL priority/>
+				29 hrefs
+				{/* <Image src="/logo.png" layout='intrinsic' width={380} height={90} placeholder='blur' blurDataURL priority/> */}
 				</a>
 			</Link>
 		  <div

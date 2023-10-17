@@ -11,7 +11,7 @@
 
 .cta_container{
   background-color: var(--gray);
-  /* background-image: url('/img/img_2.jpeg'); */
+  background-image: url('/img/img_2.jpeg');
   background-position:right;
   background-repeat: no-repeat;
   background-size: cover;

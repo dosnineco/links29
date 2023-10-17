@@ -2,8 +2,11 @@
   --bkg:#fff;
   --primary:#2573fc;
   --black:#161616;
-  --gray:#5f6b73;
-  --heading:1.5em;
+  --gray:#293238;
+  --heading:5em;
+  --heading-color:#293238;
+  --heading-color-light:#c8e9ff;
+
   --paragragh:1em;
   --red:rgb(196, 0, 26);
 
@@ -36,6 +39,7 @@ body {
   cursor: url('../public/cursor.png') 2 2, pointer;  
   position: relative;
   z-index: 1;
+  align-items: center;
 
 
 }
@@ -69,10 +73,19 @@ li{
   
 }
 
-h1,h2,h3{
+h1{
   margin: 0;
   color: var(--black);
   font-size: var(--heading);
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin-top:1em
+}
+,h2,h3{
+  margin: 0;
+  color: var(--black);
+  font-size: 1.4;
   line-height: 1.2;
   font-weight: 900;
   text-transform: capitalize;
@@ -125,15 +138,19 @@ header{
   position: relative;
   z-index: 30;
   top: 0;
-  padding:0 3em ;
+  /* padding:0 1em ; */
   /* background-color: red; */
+  min-height: 2em;
+  width:100%;
+
 }
 nav{
   display: flex;
-  padding: 2em 1em;
+  padding: 1em 0.5em;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  /* background-color: #fff; */
   
 
 }
@@ -168,7 +185,7 @@ nav a{
   padding: 0 3em;
   transition: all 0.2s;
   min-height: calc(100vh - 6em);
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .nav__menu-list.active{
   right: 0;

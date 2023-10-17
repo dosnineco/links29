@@ -5,7 +5,12 @@
       "@/comp/*": ["/comp/*"],
       "@/lib/*": ["/lib/*"],
       "@/public/*":["/public/*"],
-      "@/seo/*":["/seo/*"]
+      "@/seo/*":["/seo/*"],
+      "@/pages/*":["/pages/*"],
+      "@/styles/*":["/styles/*"]
+
+
+
     }
   }
 }

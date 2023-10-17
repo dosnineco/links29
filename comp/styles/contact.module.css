@@ -5,14 +5,16 @@
     justify-content: center;
     width: 100%;
     border-top: 2px solid rgb(220, 219, 219);
-    border-radius: 2em;
-    /* border-bottom: 2px solid rgb(220, 219, 219); */
     padding: 3em 1em;
+    background-color: var(--gray);
+    color:white;
+
 
 }
 
 .main h2{
     font-size: 2em;
+    color: var(--heading-color-light);
 }
 
 .form{
@@ -96,6 +98,8 @@
     display: flex;
     border-radius: 4px;
     margin-top: 1em;
+    border-radius: 8px;
+
 
 
     
@@ -111,6 +115,8 @@
     width:100%;
     padding:1em;
     background-color: var(--gray);
+    border-radius: 8px;
+
 
 
 }

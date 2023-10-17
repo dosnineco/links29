@@ -1,10 +1,10 @@
-.header{
+/* .header{
     padding:1em;
-    /* background-color: red; */
+    background-color: red;
     width:100%;
     color:var(--black);
     margin:1em 0;
-}
+} */
 
 .container{
     width: 100%;
@@ -17,6 +17,10 @@
 .header a{
     text-decoration: none;
 
+}
+.nav .logo{
+    text-transform: none;
+    color:var(--gray);
 }
 
 .unorder_menu{
