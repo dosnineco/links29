@@ -60,13 +60,15 @@
     overflow: hidden;
     background-color: #fff;
     max-width: 80em;
-    border:2px solid black;
+    border:2px solid rgb(207, 207, 207);
     /* width: 23em; */
 
 }
 .main{
     display:flex;
     flex-direction: column;
+    width: 35vw;
+    text-align: center;
 }
 .form{
     display: flex;
