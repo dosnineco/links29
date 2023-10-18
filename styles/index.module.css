@@ -1,6 +1,9 @@
 .container{
-  max-width: 100em;
-  text-align:center;
+  max-width: 900px;
+  margin:auto 0;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .container_h1{
@@ -16,6 +19,13 @@
 }
 
 
+.pricing{
+  justify-content: space-between;
+  margin:auto 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 @media screen and (max-width: 600px){
   .container_h1{
     text-align:center;

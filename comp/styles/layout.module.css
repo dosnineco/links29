@@ -2,8 +2,8 @@
     /* background-color: #70a9a1; */
     padding: 4em;
     position: relative;
-    width: 100%;
-
+margin-bottom: 4.5em;
+/* min-height: 120vh; */
 }
 
 .header{
@@ -22,6 +22,7 @@
     overflow: hidden;
     /* background-color: #fff; */
         background-color: #9d4edd;
+        text-align: center;
 
 
     
@@ -37,6 +38,7 @@
     font-weight: bold;
     background: none;
     font-size: 14px;
+    text-align: center;
 
 }
 
@@ -45,6 +47,7 @@
 
 .footer{
     position: fixed;
+    margin-top:4em;
     left: 50%;
     transform: translateX(-50%);
     bottom: 10px;

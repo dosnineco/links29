@@ -112,7 +112,7 @@ const Header = ()=>{
         <header className={css.header}>
             {/* <button >Register</button> */}
 
-<a href="https://calendly.com/dosnineco/register-for-a-quota-meeting" className={css.header_button}>Book us Right here</a>
+<a href="https://calendly.com/dosnineco/register-for-a-quota-meeting" className={css.header_button}>Book Us</a>
         </header>
     )
 }
