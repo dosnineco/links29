@@ -62,9 +62,12 @@ const Mail=() => {
     };
     return (
       <main className={css.main}>
-  
+   { !status.submitted
+      ?<div/> 
+        :
         <form  className={css.form} onSubmit={handleOnSubmit}>
           <h2>I Build Websites! </h2>
+         
           <input
             className={css.form_btn} 
             id="email"
@@ -90,6 +93,7 @@ const Mail=() => {
                 : 'Submitted'
               : 'Submitting...'}
           </button>
+          
   
   
           {/* <span  className={css.phone}>
@@ -98,6 +102,7 @@ const Mail=() => {
   
   
         </form>
+         }
         {status.info.error && (
           <div className="error">Error: {status.info.msg}</div>
         )}
