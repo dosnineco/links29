@@ -121,3 +121,13 @@
     font-weight: 500;
     line-height: 20px;
 }
+
+@media screen and (max-width: 600px){
+
+.main{
+    display:flex;
+    flex-direction: column;
+    width: 90vw;
+    text-align: center;
+}
+}
