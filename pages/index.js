@@ -1,94 +1,8 @@
 import Image from 'next/image';
 import css from '../styles/index.module.css';
 import React from 'react';
-import Link from 'next/link';
 import Meta from 'seo/meta';
-import ContactUs from 'comp/ContactUs';
-
-
-
-const Cta_section = () => {
-  return (
-    <section className={css.sections_container}>
-      <div className={css.cta_container}>
-        <h1>Find the most effective cars  to rent.</h1>
-        <p>Drive in luxury with us today.</p>
-        {/* <Link href='/' passHref><a className={css.blue}>	Join</a></Link> */}
-      </div>
-    </section>
-  )
-}
-
-const Services_section = () => {
-  return (
-    <section className={css.sections_container}>
-
- 
-
-      <div className={css.services_container}>
-          <h3 className={css.card_card_h3}>Select Your Ride</h3>
-        <ol className={css.services_container_ol}>
-          <li className={css.card_card}>
-          <Link href='/7seater_subaru' passHref>
-            <a className={css.card_card_parent}>
-                <Image src="/img/img_1.jpeg" layout='intrinsic' objectFit="cover" width={660} height={415} placeholder='blur' blurDataURL priority/>
-                <div className={css.card_card_text}>
-                  <span className={css.card_card_title}>
-                    <span className={css.card_card_title_child}>subaru exiga 7 Seater</span>
-                  </span>
-                  <span className={css.card_card_price}><strong>$8000Jmd/</strong>Day</span>
-                  <button className={css.card_card_cta}>Rent Now</button>
-                </div>
-            </a>
-          </Link>
-          </li>
-
-          <li className={css.card_card}>
-          <Link href='/5seater_subaru' passHref>
-            <a className={css.card_card_parent}>
-                <Image src="/img/img_5.jpeg" layout='intrinsic' objectFit="cover" width={660} height={415} placeholder='blur' blurDataURL priority/>
-                <div className={css.card_card_text}>
-                  <span className={css.card_card_title}>
-                    <span className={css.card_card_title_child}>Subaru impreza g4 5 Seater</span>
-                  </span>
-                  <span className={css.card_card_price}><strong>$7000Jmd/</strong>Day</span>
-                  <button className={css.card_card_cta}>Rent Now</button>
-                </div>
-            </a>
-          </Link>
-          </li>
-          <li className={css.card_card}>
-          <Link href='/5seater_subaru_black' passHref>
-            <a className={css.card_card_parent}>
-                <Image src="/img/img_10.jpeg" layout='intrinsic' objectFit="cover" width={660} height={415} placeholder='blur' blurDataURL priority/>
-                <div className={css.card_card_text}>
-                  <span className={css.card_card_title}>
-                    <span className={css.card_card_title_child}>Subaru impreza g4 5 Seater</span>
-                  </span>
-                  <span className={css.card_card_price}><strong>$7000Jmd/</strong>Day</span>
-                  <button className={css.card_card_cta}>Rent Now</button>
-                </div>
-            </a>
-          </Link>
-          </li>
-        </ol>
-     
-      </div>
-
-
-    </section>
-  )
-}
-
-const Contact_section = () => {
-  return (
-    <section className={css.sections_container}>
-      <ContactUs/>
-    </section>
-  )
-}
-
-
+import Mailer from 'comp/Mailer';
 
 
 export default function Home() {
@@ -96,21 +10,17 @@ export default function Home() {
   return(
       <>
         <Meta 
-          title="Rentawhip - Home"
-          des ="RentAwhip.com offers the lowest car rental prices in Jamaica."
-          url='www.rentawhipja.com'
+          title=""
+          des =""
+          url=''
           img=''
           pub='2022-08-30T22:09:00Z'
           mod='2022-08-30T09:09:00Z'
         /> 
-          <div className={css.home_container}>
-            <h1>Hire the world’s top creative talent.</h1>
-            <p>Connect with a community of millions of top-rated designers & agencies around the world.</p>
-            <Cta_section/>
-     <ContactUs/>
-
-        </div>
-        
+        <main className={css.container}>
+          <h1  className={css.container_h1}>Digitize your Business</h1>
+          <p> Use our Template to create a  blazing fast website for high conversion</p>
+        </main>
       </>
     )   
 }

@@ -1,5 +1,5 @@
 :root{
-  --bkg:#fff;
+  --bkg:#fdfcf9;
   --primary:#2573fc;
   --black:#161616;
   --gray:#293238;
@@ -80,7 +80,7 @@ h1{
   line-height: 1.2;
   font-weight: 900;
   text-transform: capitalize;
-  margin-top:1em
+  /* margin-top:1em */
 }
 ,h2,h3{
   margin: 0;

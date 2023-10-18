@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import css from '@/comp/styles/contact.module.css'
+
+
 export default ({title}) => {
   const [status, setStatus] = useState({
     submitted: false,
@@ -60,7 +62,6 @@ export default ({title}) => {
   };
   return (
     <main className={css.main}>
-            <h2>{title?title:'Rent a Car Today!'}</h2>
 
       <form  className={css.form} onSubmit={handleOnSubmit}>
         <label htmlFor="email">Email</label>
@@ -88,12 +89,10 @@ export default ({title}) => {
             : 'Submitting...'}
         </button>
 
-        {/* <h2>Or Call: 876 208-5353</h2> */}
 
         <span  className={css.phone}>
         <a href="tel:876-208-5353">876 208-5353</a>
         </span>
-        {/* rentawhipstandardonwheels@gmail.com */}
 
 
       </form>

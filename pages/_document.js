@@ -52,7 +52,6 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
             type="font/ttf"
           />
-<meta name="google-site-verification" content="B8fTeI8B7k6H8GLsUcoph0ZwAjPqCd2YB8l07HQJgec" />        
                     
         </Head>     
         <body>
