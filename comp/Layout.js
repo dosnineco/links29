@@ -62,12 +62,9 @@ const Mail=() => {
     };
     return (
       <main className={css.main}>
-   { !status.submitted
-      ?<div/> 
-        :
+  
         <form  className={css.form} onSubmit={handleOnSubmit}>
           <h2>I Build Websites! </h2>
-         
           <input
             className={css.form_btn} 
             id="email"
@@ -93,7 +90,6 @@ const Mail=() => {
                 : 'Submitted'
               : 'Submitting...'}
           </button>
-          
   
   
           {/* <span  className={css.phone}>
@@ -102,7 +98,6 @@ const Mail=() => {
   
   
         </form>
-         }
         {status.info.error && (
           <div className="error">Error: {status.info.msg}</div>
         )}
@@ -115,7 +110,9 @@ const Mail=() => {
 const Header = ()=>{
     return (
         <header className={css.header}>
-            <button className={css.header_button}>Register</button>
+            {/* <button >Register</button> */}
+
+<a href="https://calendly.com/dosnineco/register-for-a-quota-meeting" className={css.header_button}>Book us Right here</a>
         </header>
     )
 }
@@ -130,7 +127,7 @@ const Footer = ()=>{
 const Layout = ({children}) => {
     return (
         <main className={css.main_layout}>
-            {/* <Header/> */}
+            <Header/>
             {children}
             <Footer/>
        </main>
