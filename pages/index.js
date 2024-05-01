@@ -17,25 +17,20 @@ export default function Home() {
           mod='2022-08-30T09:09:00Z'
         /> 
         <main className={css.container}>
-          <h1  className={css.container_h1}>Digitize your business.</h1>
-          {/* <p>Use our template to create a blazingly fast website for high conversions.</p> */}
+          <h1  className={css.container_h1}>Do you need a business website today? </h1>
 
           <div className={css.pricing}>
             <div>
-          {/* <h2>
-            Basic template plans include:
-          </h2> */}
-          <h2>Simple Landing Page</h2>
-          <ol>
-            {/* <li>Simple Landing Page</li> */}
-            {/* <li>Detailed Link Analytics </li>
+   
+          {/* <ol>`
+            <li>Simple Landing Page</li>
+            <li>Detailed Link Analytics </li>
             <li>Local Seo</li>
             <li>Fully Branded Domains</li>
             <li>Montly Maintainace</li>
-            <li>Bookings link</li>
-            <li>Contact form</li> */}
-          </ol>
-          <Cardilight text={'Price: $100 USD'}/>
+            <li>Contact form</li> 
+          </ol> */}
+          <Cardilight text={'Price: $115 USD'}/>
           </div>
           </div>
         </main>

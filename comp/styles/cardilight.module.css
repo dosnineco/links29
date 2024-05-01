@@ -2,7 +2,7 @@
 
     color: rgb(255, 255, 255);
     display: inline-block;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 14px 24px 16px;
     font-size: 1.125rem;
     font-weight: 700;
@@ -15,5 +15,5 @@
     position: relative;
     width: 11em;
     margin-top: 16px;
-    background: rgb(85, 81, 255);
+    background: #FF8A08;
 }
