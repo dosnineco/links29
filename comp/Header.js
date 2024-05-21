@@ -17,16 +17,16 @@ const NavItem = ({ text, href, active }) => {
 	const [activeIdx, setActiveIdx] = useState(-1);
   
 	return (
-	  <header >
-		<nav className={`nav`}>
+	  <header className={css.container}>
+		<nav className={css.nav}>
 			<Link  href='/' passHref>
-				<a className={`logo`} alt="Rentawhip">
-				{/* Rentawhip */}
-				29 hrefs
-				{/* <Image src="/logo.png" layout='intrinsic' width={380} height={90} placeholder='blur' blurDataURL priority/> */}
-				</a>
+				<h2 className={`logo`} alt="Rentawhip">
+				{/* <Image src="/logo.png" layout='intrinsic' width={50} height={50} placeholder='blur' blurDataURL priority/> */}
+				Dosnine Media 
+
+				</h2>
 			</Link>
-		  <div
+		  {/* <div
 			onClick={() => setNavActive(!navActive)}
 			className={`nav__menu-bar`}
 		  >
@@ -40,7 +40,7 @@ const NavItem = ({ text, href, active }) => {
 				<li><Link href='/' passHref><a className={css.regular}>	About</a></Link></li>
 				<li><Link href='/contactus' passHref><a className={css.blue}>	Contact</a></Link></li>
 			</ul>
-		  </div>
+		  </div> */}
 		</nav>
 	  </header>
 	);

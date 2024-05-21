@@ -1,45 +1,307 @@
-.container{
-  max-width: 900px;
-  margin:auto 0;
-  display:flex;
+.container {
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-.container_h1{
-  text-align:center;
-  font-variation-settings: "wght" 750;
-  background-image: linear-gradient(90deg,#a5a8ff,#ff785d 50%,#e69cff);
-  background-clip: text;
-  font-family: Cabinetgrotesk Variable,sans-serif;
-  font-size: 7rem;
+.header {
+  width: 100%;
+  /* padding: 1rem; */
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* margin-bottom: 1em; */
+  display:flex;
+  flex-direction: row;
+  
+  align-items: center;
+  padding-left:4em;
+}
+
+.logo {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  display: inline;
+}
+
+.main {
+  width: 100%;
+  /* padding: 40px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  background-image: url("../public/banner_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+}
+
+.heroContent {
+  max-width: 50%;
+  display: flex;
+  text-align: left;
+  align-items: left;
+  flex-direction: column;
+  margin:0 0 0 4em;
+  
+}
+
+.tagline {
+  /* display: block; */
+  margin-bottom: 10px;
+  max-width: 15rem;
+  border-radius: 5px;
+  transition: all ease .23s;
+  background-color: #33eac2;
+  font:12px;
+  padding:4px 10px;
+  text-align: center;
   font-weight: 600;
-  line-height: 7rem;
-  -webkit-text-fill-color: transparent;
+}
+
+.title {
+  margin: 0;
+  font-size: 56px;
+  line-height: 1.3;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.button {
+  padding: 12px 40px;
+  margin: 0 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  /* border-radius: 5px; */
+  cursor: pointer;
+}
+
+.heroImage_con{
+  padding:1em;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  
+}
+.heroImage {
+  max-width: 100%;
+  max-height: 100%;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+
+  
+  
+
+
+}
+
+.whyChooseUs {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.whyChooseUs h2 {
+  font-size: 28px;
+}
+
+.whyChooseUs p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.icon {
+  font-size: 50px;
+  /* color: #00a884; */
+}
+
+.feature h3 {
+  margin-top: 10px;
+  font-size: 20px;
 }
 
 
-.pricing{
-  justify-content: space-between;
-  margin:auto 0;
+
+
+@media screen and (max-width: 600px){
+  .heroContent {
+    max-width: 100%;
+    display: flex;
+    text-align: left;
+    align-items: left;
+    flex-direction: column;
+    margin:0 0 0 1em;
+    order:1;
+  }
+
+  .hero {
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
+  background-image: url("../public/banner_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
   flex-direction: column;
 }
-@media screen and (max-width: 600px){
-  .container_h1{
-    text-align:center;
-    font-variation-settings: "wght" 750;
-    background-image: linear-gradient(90deg,#a5a8ff,#ff785d 50%,#e69cff);
-    background-clip: text;
-    font-family: Cabinetgrotesk Variable,sans-serif;
-    font-size: 4rem;
-    font-weight: 600;
-    line-height: 4rem;
-    -webkit-text-fill-color: transparent;
+  .heroImage_con{
+    padding:1em;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    order:2;
   }
-  
+  .header {
+ 
+    padding-left:1em;
+  }
   
 }
 
 
+
+/* Styles for How AI Writer Works Section */
+.howItWorks {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.worksTitle {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+}
+
+.worksSubtitle {
+  font-size: 14px;
+  color: var(--primary);
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.worksContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.worksImage {
+  max-width: 45%;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.worksSteps {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+}
+
+.stepNumber {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary);
+  margin-right: 15px;
+}
+
+.stepText {
+  max-width: 400px;
+}
+
+.stepText h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.stepText p {
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 10px 0;
+}
+
+.getStarted {
+  font-size: 16px;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.howItWorksButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+/* Footer styles */
+.footer {
+  width: 100%;
+  /* padding: 20px; */
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+
+
+@media screen and (max-width: 600px){
+
+  .worksSteps {
+    max-width: 100%;
+  
+  }
+}

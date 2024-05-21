@@ -127,9 +127,9 @@ const Footer = ()=>{
 const Layout = ({children}) => {
     return (
         <main className={css.main_layout}>
-            <Header/>
+            {/* <Header/> */}
             {children}
-            <Footer/>
+            {/* <Footer/> */}
        </main>
     )
 }
