@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/index.module.css';
-import Image
- from 'next/image';
+import Image  from 'next/image';
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -23,8 +23,8 @@ export default function Home() {
             <span className={styles.tagline}>One Day Service Delivery</span>
             <h1 className={styles.title}>Do You Need A Website For Your Service Business?</h1>
             <div className={styles.buttons}>
-              <button className={styles.button}>Yes</button>
-              <button className={styles.button}>No</button>
+              <a href='https://wa.me/message/5LXYP7EBAUHMD1' className={styles.button}>Yes</a>
+              <a href='https://wa.me/message/5LXYP7EBAUHMD1' className={styles.button}>No</a>
             </div>
           </div>
           {/* <img src="/construction-site.jpg" alt="Construction site" /> */}
@@ -42,11 +42,11 @@ export default function Home() {
           </p>
           <div className={styles.features}>
             <div className={styles.feature}>
-              <span className={styles.icon}>📁</span>
+              <Image  src="/template.png" layout='intrinsic' width={114} height={114} placeholder='blur' blurDataURL priority/>
               <h3>Templates</h3>
             </div>
             <div className={styles.feature}>
-              <span className={styles.icon}>🔧</span>
+              <Image  src="/technical-support.png" layout='intrinsic' width={114} height={114} placeholder='blur' blurDataURL priority/>
               <h3>Yearly Maintenance</h3>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function Home() {
                   <h3>Book a appointment </h3>
                   <p>Once step 1 to 2 is ok, on call we will collect info on your business to tailor the template to your business and Publish to your domain. </p>
 
-                  <button className={styles.howItWorksButton}>Book here</button>
+                  <a href='https://wa.me/message/5LXYP7EBAUHMD1'  className={styles.howItWorksButton}>Book here</a>
                 </div>
               </div>
               <div className={styles.step}>

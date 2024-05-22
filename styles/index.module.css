@@ -46,6 +46,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 90vh;
+  padding:2em 0;
 }
 
 .heroContent {
@@ -63,7 +64,7 @@
   margin-bottom: 10px;
   max-width: 15rem;
   border-radius: 5px;
-  transition: all ease .23s;
+  transition: all ease-in-out 10s;
   background-color: #33eac2;
   font:12px;
   padding:4px 10px;
@@ -90,6 +91,17 @@
   border: none;
   /* border-radius: 5px; */
   cursor: pointer;
+  text-decoration: none;
+}
+
+.button:nth-of-type(1){
+  background-color: #1abf3c;
+
+}
+
+.button:nth-of-type(2){
+  background-color: rgb(255, 0, 68);
+
 }
 
 .heroImage_con{
@@ -117,10 +129,14 @@
 .whyChooseUs {
   max-width: 800px;
   margin: 0 auto;
+  padding:1em;
+  text-align: left;
+  margin: 3em 0;
+
 }
 
 .whyChooseUs h2 {
-  font-size: 28px;
+  font-size: 36px;
 }
 
 .whyChooseUs p {
@@ -131,7 +147,8 @@
 .features {
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
+  margin: 1em 0;
+  align-items: center;
 }
 
 .feature {
@@ -151,7 +168,7 @@
 
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
   .heroContent {
     max-width: 100%;
     display: flex;
@@ -199,6 +216,8 @@
   padding: 40px 20px;
   background-color: #fff;
   text-align: left;
+  transition: background-color 0.3s, padding 0.3s;
+
 }
 
 .worksTitle {
@@ -278,6 +297,7 @@
   border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
+  text-decoration: none;
 }
 
 
@@ -298,7 +318,7 @@
 
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
 
   .worksSteps {
     max-width: 100%;
